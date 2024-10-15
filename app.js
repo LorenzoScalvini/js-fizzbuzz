@@ -5,7 +5,9 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz. */
 // stampare numeri uno a cento
 for (let i = 0; i < 100; i++ ){
     num = i + 1
-    console.log(num)
+    if (num % 5 == 0 && i % 3 == 0) console.log("FizzBuzz");
+    else if (num % 3 == 0) console.log("Fizz");
+    else if (num % 5 == 0) console.log("Buzz");
 }
 // fizz multipli di 3
 //per i multipli di 5 buzz 
